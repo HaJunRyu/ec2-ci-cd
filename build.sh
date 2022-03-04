@@ -1,1 +1,1 @@
-yarn install && yarn build
+pwd>/home/ubuntu

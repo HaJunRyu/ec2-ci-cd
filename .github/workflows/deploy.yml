@@ -21,13 +21,15 @@ jobs:
         with:
           node-version: '14.x'
 
-      # # [1]
-      # - name: Install dependencies
-      #   run: yarn install
-      #   # [2]
-      # - name: build next app
-      #   run: yarn build
-      # [3]
+      # [1]
+      - name: Install dependencies
+        run: yarn install
+
+        # [2]
+      - name: build next app
+        run: yarn build
+
+        # [3]
       - name: Make zip file
         run: zip -qq -r ./$GITHUB_SHA.zip .
         shell: bash
