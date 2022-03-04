@@ -12,7 +12,7 @@ permissions:
     group: ubuntu
 
 hooks:
-  ApplicationStart:
+  AfterInstall:
     - location: ./build.sh
-      timeout: 60
+      timeout: 600
       runas: ubuntu
