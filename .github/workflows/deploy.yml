@@ -7,7 +7,6 @@ on:
 
 env:
   S3_BUCKET_NAME: ec2-ci-cd
-  RESOURCE_PATH: ./src/main/resources/application.yaml
   CODE_DEPLOY_APPLICATION_NAME: ec2-code-deploy-test
   CODE_DEPLOY_DEPLOYMENT_GROUP_NAME: ec2-ci-cd-test-group
 
@@ -32,7 +31,7 @@ jobs:
 
         # [3]
       - name: Make zip file
-        run: zip -r ./$GITHUB_SHA.zip .
+        run: zip -qq -r ./$GITHUB_SHA.zip .next
         shell: bash
 
         # [4]
