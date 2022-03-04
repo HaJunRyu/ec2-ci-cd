@@ -57,7 +57,7 @@ const Home: NextPage = () => {
           </span>
         </a>
       </footer>
-      배포.
+      배포.z
     </div>
   );
 };
