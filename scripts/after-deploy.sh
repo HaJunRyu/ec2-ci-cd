@@ -8,4 +8,4 @@ REPOSITORY=/home/ubuntu/deploy
 
 cd $REPOSITORY
 yarn install
-pm2 reload recruit
+pm2 restart recruit
