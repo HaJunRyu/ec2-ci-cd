@@ -8,7 +8,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <div>
-        <Link href="/test">test로</Link>
+        <Link href="/test">test로gd</Link>
       </div>
       <div>
         <Link href="/page">page</Link>
