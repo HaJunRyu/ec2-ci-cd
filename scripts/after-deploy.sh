@@ -7,5 +7,6 @@ export NVM_DIR="$HOME/.nvm"
 REPOSITORY=/home/ubuntu/deploy
 
 cd $REPOSITORY
+
 yarn install
-pm2 restart recruit
+
