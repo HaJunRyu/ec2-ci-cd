@@ -16,6 +16,9 @@ const Home: NextPage = () => {
       <div>
         <Link href="/zzz">zzz</Link>
       </div>
+      <div>
+        <Link href="/xxx">xxx</Link>
+      </div>
     </div>
   );
 };
