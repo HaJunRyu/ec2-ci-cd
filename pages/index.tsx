@@ -7,8 +7,15 @@ import styles from '../styles/Home.module.css';
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
-      <Link href="/test">test로</Link>
-      <Link href="/page">page</Link>
+      <div>
+        <Link href="/test">test로</Link>
+      </div>
+      <div>
+        <Link href="/page">page</Link>
+      </div>
+      <div>
+        <Link href="/zzz">zzz</Link>
+      </div>
     </div>
   );
 };
