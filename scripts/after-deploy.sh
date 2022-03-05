@@ -6,6 +6,10 @@ export NVM_DIR="$HOME/.nvm"
 
 REPOSITORY=/home/ubuntu/deploy
 
-sudo cd $REPOSITORY >> log.txt
-sudo yarn install >> log.txt
-sudo pm2 restart recruit >> log.txt
+CD_RESULT=$(cd $REPOSITORY)
+YARN_INSTALL=$(sudo yarn install)
+PM2_RESTART=$(pm2 restart recruit)
+
+echo "CD_LOG=$CD_RESULT" >> log.txt
+echo "YARN_INSTALL_LOG=$YARN_INSTALL" >> log.txt
+echo "PM2_RESTART_LOG=$PM2_RESTART" >> log.txt
