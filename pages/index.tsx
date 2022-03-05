@@ -11,7 +11,7 @@ const Home: NextPage = () => {
         <Link href="/test">test로gd</Link>
       </div>
       <div>
-        <Link href="/page">page</Link>
+        <Link href="/page">pagepagepage</Link>
       </div>
       <div>
         <Link href="/zzz">zzz</Link>
