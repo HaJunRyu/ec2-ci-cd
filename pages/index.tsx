@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../styles/Home.module.css';
+import mask from '../src/assets/images/Mask.png';
 
 const Home: NextPage = () => {
   return (
@@ -19,6 +20,14 @@ const Home: NextPage = () => {
       <div>
         <Link href="/xxx">xxx</Link>
       </div>
+      <Image
+        src={mask.src}
+        placeholder="blur"
+        blurDataURL={mask.blurDataURL}
+        alt=""
+        width={200}
+        height={200}
+      />
     </div>
   );
 };
